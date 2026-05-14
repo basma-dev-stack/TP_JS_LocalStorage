@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>2. Ajouter des Questions</title>
+    <style>
+        body { font-family: sans-serif; margin: 30px; background-color: #f0f2f5; }
+        nav { background: #333; padding: 15px; margin-bottom: 20px; border-radius: 5px; }
+        nav a { color: white; margin-right: 20px; text-decoration: none; font-weight: bold; }
+        .form-container { max-width: 500px; background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin: auto; }
+        input { width: 100%; padding: 12px; margin-top: 10px; box-sizing: border-box; border: 1px solid #ddd; border-radius: 4px; }
+        .btn-plus { background: #6c757d; color: white; border: none; padding: 10px; cursor: pointer; margin-top: 10px; width: 100%; border-radius: 4px; }
+        #btn-terminer { background: #28a745; color: white; border: none; padding: 15px; cursor: pointer; margin-top: 20px; width: 100%; font-size: 16px; border-radius: 4px; font-weight: bold; }
+        #btn-terminer:hover { background: #218838; }
+        label { font-weight: bold; display: block; margin-top: 15px; color: #333; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">1. Créer</a>
+        <a href="ajouter-question.html">2. Questions</a>
+        <a href="examens.html">3. Rechercher</a>
+    </nav>
+
+    <div class="form-container">
+        <h1>Étape 2 : Ajouter des questions</h1>
+        
+        <label>Confirme ton nom (Propriétaire) :</label>
+        <input type="text" id="proprio-recherche" placeholder="Ex: basma">
+        
+        <label>Nom de l'examen créé à l'étape 1 :</label>
+        <input type="text" id="examen-concerne" placeholder="Ex: Informatique">
+
+        <hr style="margin: 25px 0; border: 0; border-top: 1px solid #eee;">
+        
+        <div id="zone-questions">
+            <label>Questions :</label>
+            <input type="text" class="question-texte" placeholder="Question n°1">
+        </div>
+
+        <button type="button" class="btn-plus" id="btn-ajouter-liste">+ Ajouter une autre question</button>
+        
+        <button type="button" id="btn-terminer">Sauvegarder l'Examen Complet</button>
+    </div>
+
+    <script src="ajouter-question.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>1. Créer un Examen</title>
+    <style>
+        body { font-family: sans-serif; margin: 30px; line-height: 1.6; }
+        nav { background: #333; padding: 15px; margin-bottom: 20px; border-radius: 5px; }
+        nav a { color: white; margin-right: 20px; text-decoration: none; font-weight: bold; }
+        .form-container { max-width: 400px; background: #f9f9f9; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+        input, textarea, button { width: 100%; padding: 10px; margin: 10px 0; box-sizing: border-box; }
+        button { background-color: #007bff; color: white; border: none; cursor: pointer; border-radius: 4px; }
+        button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">1. Créer</a>
+        <a href="ajouter-question.html">2. Questions</a>
+        <a href="examens.html">3. Rechercher</a>
+    </nav>
+
+    <h1>Étape 1 : Créer un nouvel examen</h1>
+    <div class="form-container">
+        <form id="form-examen">
+            <label>Nom de l'examen :</label>
+            <input type="text" id="nom-examen" required placeholder="Ex: Mathématiques">
+
+            <label>Durée (minutes) :</label>
+            <input type="number" id="duree-examen" required placeholder="Ex: 60">
+
+            <label>Description :</label>
+            <textarea id="description-examen" required placeholder="Description de l'épreuve"></textarea>
+
+            <label>Ton nom (Propriétaire) :</label>
+            <input type="text" id="proprietaire" required placeholder="Ex: Basma">
+
+            <button type="submit">Enregistrer et Continuer</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

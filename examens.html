@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>3. Chercher mes Examens</title>
+    <style>
+        body { font-family: sans-serif; margin: 40px; }
+        nav { background: #333; padding: 10px; margin-bottom: 20px; }
+        nav a { color: white; margin-right: 15px; text-decoration: none; }
+        .examen-card { border: 2px solid #007bff; padding: 15px; margin: 10px 0; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">1. Créer Examen</a>
+        <a href="ajouter-question.html">2. Ajouter Questions</a>
+        <a href="examens.html">3. Chercher/Voir</a>
+    </nav>
+
+    <h1>Rechercher mes examens</h1>
+    <input type="text" id="search-nom" placeholder="Tape ton nom ici (ex: Basma)">
+    <button onclick="chercherExamens()">Rechercher</button>
+
+    <div id="resultats"></div>
+
+    <script src="recherche.js"></script>
+</body>
+</html>
